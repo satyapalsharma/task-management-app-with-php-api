@@ -1,0 +1,56 @@
+```json
+{
+  "name": "task-management-frontend",
+  "version": "0.1.0",
+  "private": true,
+  "description": "Frontend application for the Task Management App. Built with Next.js, React, and TypeScript. This client interacts with a PHP RESTful API for task management and user authentication. It's designed to be part of a larger interconnected system, potentially alongside services like the 'Recipe Finder App' or 'Online Code Snippet Manager'.",
+  "scripts": {
+    "dev": "next dev",
+    "build": "next build",
+    "start": "next start",
+    "lint": "next lint"
+    // Cross-Project Context:
+    // This frontend relies on a separate PHP backend API (task-management-backend).
+    // Ensure the backend service is running and accessible via the API_BASE_URL
+    // configured in your .env.local file.
+    //
+    // For a full development environment involving multiple services (e.g., if this
+    // were part of a monorepo with other apps like Recipe Finder or Unit Converter),
+    // you might use a tool like 'concurrently' at the root level:
+    // "dev:all": "concurrently \"npm run dev -w frontend\" \"npm run dev -w backend\" \"npm run dev -w recipe-finder-frontend\""
+    // (This specific package.json is for the 'frontend' workspace only.)
+  },
+  "dependencies": {
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0",
+    "next": "^14.1.0",
+    "axios": "^1.6.5",
+    "next-auth": "^4.24.5"
+  },
+  "devDependencies": {
+    "typescript": "^5.3.3",
+    "@types/node": "^20.11.5",
+    "@types/react": "^18.2.48",
+    "@types/react-dom": "^18.2.18",
+    "eslint": "^8.56.0",
+    "eslint-config-next": "^14.1.0",
+    "postcss": "^8.4.33",
+    "tailwindcss": "^3.4.1",
+    "autoprefixer": "^10.4.17"
+  },
+  "keywords": [
+    "nextjs",
+    "react",
+    "typescript",
+    "task-management",
+    "frontend",
+    "php-api",
+    "restful-api",
+    "authentication",
+    "microservice-integration",
+    "cross-project"
+  ],
+  "author": "Your Name/Organization",
+  "license": "MIT"
+}
+```
